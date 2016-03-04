@@ -187,7 +187,7 @@ header .navbar.inbody .navbar-brand img{
 
 /*** Contact ***/
 #contact .content.container-fluid{
-  padding: 0px 100px 70px 100px;
+  padding: 0px 100px 100px 100px;
 }
 
 #contact .col-md-6{
@@ -229,9 +229,26 @@ header .navbar.inbody .navbar-brand img{
   padding-top: 30px;
 }
 
+#contactInfo #social-media #twitter-icon{
+  margin-left: 50px;
+}
+
 #contactInfo #social-media #facebook-icon{
-  padding-left: 20px;
-  max-width: 70px;
+  margin-left: 20px;
+}
+
+#fund-button{
+  color: #777;
+  background-color: white;
+  margin-left: 40px;
+  border: 2px solid #999;
+  transition: all ease-in-out .15s;
+}
+
+#fund-button:hover, #fund-button:focus{
+  color: white;
+  border: 2px solid rgba(230, 149, 0, 0.95);
+  background-color: rgba(230, 149, 0, 0.95);
 }
 
 /*** Feed ***/
