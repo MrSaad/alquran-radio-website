@@ -25,6 +25,10 @@ ul{
   list-style-position: outside;
 }
 
+a, a:hover{
+  color: #E4AD54;
+}
+
 /*** navbar **/
 header .navbar {
   padding: 30px 0;
@@ -150,7 +154,7 @@ header .navbar.inbody .navbar-brand img{
 }
 
 #about .content.container-fluid{
-  padding: 70px 80px 50px 80px;
+  padding: 0px 80px 30px 80px;
 }
 
 #about .row{
@@ -159,7 +163,7 @@ header .navbar.inbody .navbar-brand img{
 
 #about .col-md-4{
   text-align: center;
-  padding: 0px 30px 0px 30px;
+  padding: 70px 30px 0px 30px;
 }
 
 #info-icon{
@@ -183,24 +187,54 @@ header .navbar.inbody .navbar-brand img{
 
 /*** Contact ***/
 #contact .content.container-fluid{
-  padding: 70px 80px 50px 80px;
+  padding: 0px 100px 70px 100px;
 }
 
+#contact .col-md-6{
+  padding-top: 70px;
+}
+
+#contact h2{
+  margin-bottom: 20px;
+}
+
+/*** ContactInfo ***/
 
 #contactInfo-contact{
   font-size: 22px;
-  padding-top: 20px;
-  padding-left: 0;
 }
 
 #contactInfo-contact .col-xs-12{
   padding-top: 10px;
-  padding-left: 0px;
 }
 
 #contactInfo-contact span{
   padding-left: 20px;
 }
+
+#contactInfo-contact img{
+  max-width: 50px;
+  filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  transition:  all .3s ease-out;
+}
+
+#contactInfo-contact img:hover{
+  filter: none;
+  -webkit-filter: none;
+}
+
+#contactInfo #social-media{
+  padding-top: 30px;
+}
+
+#contactInfo #social-media #facebook-icon{
+  padding-left: 20px;
+  max-width: 70px;
+}
+
+/*** Feed ***/
 
 /*** Footer ***/
 #footer{
