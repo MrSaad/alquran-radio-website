@@ -149,23 +149,36 @@ header .navbar.inbody .navbar-brand img{
   text-align: center;
 }
 
-#about .content.container{
-  padding: 70px 10px 50px 10px;
+#about .content.container-fluid{
+  padding: 70px 80px 50px 80px;
 }
 
 #about .row{
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 #about .col-md-4{
   text-align: center;
+  padding: 0px 30px 0px 30px;
 }
 
-/*** Radio ***/
-#radio{
-  position: fixed;
-  bottom: -10px;
-  width: 100%;
+#info-icon{
+  display: inline-block;
+}
+
+#about p{
+  padding-top: 20px;
+  font-size: 0.7em;
+}
+
+#about h3{
+  font-weight: 600;
+  padding-top: 20px;
+  color: rgba(212,175,55,1);;
+}
+
+#about .alquran-icon{
+  color: black;
 }
 
 
@@ -180,6 +193,20 @@ header .navbar.inbody .navbar-brand img{
   color: #666;
 }
 
+/*** Empty Space ***/
+#empty-space{
+  height: 100px;
+}
+
 #footer p{
   margin: 5px 0 10px 0;
+}
+
+/*** Radio ***/
+#radio{
+  border: 1px solid transparent;
+  border-color: #DDD; 
+  position: fixed;
+  bottom: -10px;
+  width: 100%;
 }
