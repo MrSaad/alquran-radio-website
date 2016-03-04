@@ -163,7 +163,7 @@ header .navbar.inbody .navbar-brand img{
 }
 
 #info-icon{
-  display: inline-block;
+
 }
 
 #about p{
@@ -173,14 +173,34 @@ header .navbar.inbody .navbar-brand img{
 
 #about h3{
   font-weight: 600;
-  padding-top: 20px;
+  padding-top: 40px;
   color: rgba(212,175,55,1);;
 }
 
 #about .alquran-icon{
-  color: black;
+  color: #555;
 }
 
+/*** Contact ***/
+#contact .content.container-fluid{
+  padding: 70px 80px 50px 80px;
+}
+
+
+#contactInfo-contact{
+  font-size: 22px;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+#contactInfo-contact .col-xs-12{
+  padding-top: 10px;
+  padding-left: 0px;
+}
+
+#contactInfo-contact span{
+  padding-left: 20px;
+}
 
 /*** Footer ***/
 #footer{
