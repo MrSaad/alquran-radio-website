@@ -199,9 +199,6 @@ header .navbar.inbody .navbar-brand img{
 }
 
 /*** Contact ***/
-#contact .content.container-fluid{
-  padding: 0px 100px 100px 100px;
-}
 
 #contact .col-md-6{
   padding-top: 70px;
@@ -215,6 +212,7 @@ header .navbar.inbody .navbar-brand img{
 
 #contactInfo-contact{
   font-size: 22px;
+  margin-left: 0px;
 }
 
 #contactInfo-contact .col-xs-12{
@@ -268,7 +266,12 @@ header .navbar.inbody .navbar-brand img{
 
 /*** Footer ***/
 #footer{
+  margin-top: 50px;
   background-color: transparent;
+}
+
+#footer p{
+  margin: 5px 0 10px 0;
 }
 
 #footer .content.container{
@@ -282,9 +285,7 @@ header .navbar.inbody .navbar-brand img{
   height: 100px;
 }
 
-#footer p{
-  margin: 5px 0 10px 0;
-}
+
 
 /*** Radio ***/
 #radio{

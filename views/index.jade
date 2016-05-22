@@ -82,7 +82,7 @@ block content
 		
 		//- CONTACT PAGE
 		#contact.page
-			.content.container-fluid
+			.content.container
 				.row
 
 					//- left side, contact info
@@ -115,11 +115,19 @@ block content
 					//- right side, facebook feed
 					#feed.col-md-6
 						h2 News
-						.col-xs-12(height='300px')
-							.fb-page(data-href='https://www.facebook.com/alquranradio/', data-tabs='timeline', data-small-header='true', data-adapt-container-width='true', data-hide-cover='true', data-show-facepile='true')
-								.fb-xfbml-parse-ignore
-									blockquote(cite='https://www.facebook.com/alquranradio/')
-										a(href='https://www.facebook.com/alquranradio/') Al-Quran Radio
+						.col-xs-12
+							.fb-page(data-href='https://www.facebook.com/alquranradio/', data-tabs='timeline', data-width="500", data-height='400', data-small-header='true', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='false')
+							.fb-xfbml-parse-ignore
+								//- blockquote(cite='https://www.facebook.com/alquranradio/')
+								//- 	a(href='https://www.facebook.com/alquranradio/') Al-Quran Radio
+
+		#footer
+			.content.container
+				.row
+					.col-sm-12
+						p &copy; 2016 Al-Quran Radio. All Rights Reserved   
+
+		.empty-space
       
 
 

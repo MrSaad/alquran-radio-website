@@ -54,70 +54,12 @@ $(function(){
 	}) //smooth scrolling
 })
 
+$(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=459062830782801";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
-// (function() {
-//     'use strict';
-//     var player = {
-//         "id": "1e8501e",
-//         "name": "Main Website ",
-//         "type": "large",
-//         "stream": {
-//             "station ": "s25ffa1bef",
-//             "output": null,
-//             "streaming_url": "https:\/\/streaming.radio.co\/s25ffa1bef"
-//         },
-//         "theme": {
-//             "width": 400,
-//             "background_colour": "#fcfcfc",
-//             "text_colour": "#7e7f7b",
-//             "accent_colour": "#ddbf2c",
-//             "rounded_corners": true
-//         },
-//         "settings": {
-//             "autoplay": true,
-//             "artwork": true
-//         },
-//         "embed_url": "https:\/\/embed.radio.co\/player\/1e8501e.html",
-//         "social": {
-//             "twitter": false,
-//             "facebook_share": false,
-//             "embed": false,
-//             "template": "Radio.co"
-//         }
-//     };
-//     var i = document.getElementById('embedFrame');
-//     var style = "border:none;";
-//     var width = player.theme.width;
-//     if (window.screen.width < 400) {
-//         width = '100%';
-//     }
-//     i.src = player.embed_url;
-//     i.width = width;
-//     if (player.theme.rounded_corners) {
-//         style += 'border-radius:8px;';
-//     }
-//     i.setAttribute('style', style);
-//     var s = document.getElementsByTagName('script');
-//     s = s[s.length - 1];
-//     if (s.parentNode.nodeName === 'HEAD') {
-//         window.onload = function() {
-//             document.body.appendChild(i);
-//         };
-//     } else {
-//         s.parentNode.insertBefore(i, s);
-//     }
-//     window.addEventListener('message', function(e) {
-//         var eventName = e.data[0];
-//         var data = e.data[1];
-//         if (eventName === player.id + '.setHeight') {
-//             i.style.height = data + 'px';
-//         }
-//     }, false);
-//     i.addEventListener('load', function() {
-//         var targetUrl = player.embed_url.split('/').splice(0, 3).join('/');
-//         setTimeout(function() {
-//             i.contentWindow.postMessage(JSON.stringify(['parent', location]), targetUrl);
-//         }, 1000);
-//     });
-// }());
 
