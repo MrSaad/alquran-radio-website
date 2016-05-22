@@ -1,10 +1,10 @@
 extends layout
 
 block links
+	script(src='javascripts/prefixfree.min.js')
 	link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
 	link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
 	link(rel='stylesheet', href='stylesheets/style.css')
-	script(src='javascripts/prefixfree.min.js')
 
 block content
 	header 
@@ -60,7 +60,7 @@ block content
 					//- 		p.ptime 7:37pm
 					
 					#main-player.col-xs-12
-						iframe#embedFrame(width="100%" height="800px" scrolling="no" frameborder="no" src='https://embed.radio.co/player/1e8501e.html')
+						//- iframe#embedFrame(width="100%" height="800px" scrolling="no" frameborder="no" src='https://embed.radio.co/player/1e8501e.html')
 
 		
 		//- ABOUT PAGE
@@ -128,7 +128,10 @@ block content
 						p &copy; 2016 Al-Quran Radio. All Rights Reserved   
 
 		.empty-space
-      
+
+	#radio
+		//- iframe#fixedEmbed(width="100%", height="100px", scrolling="no", frameborder="no", src="https://embed.radio.co/player/2fcfe9e.html")
+		iframe#fixedEmbed
 
 
 	script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')

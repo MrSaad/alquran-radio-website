@@ -292,6 +292,7 @@ header .navbar.inbody .navbar-brand img{
   border: 1px solid transparent;
   border-color: #DDD; 
   position: fixed;
-  bottom: -10px;
+  bottom: -1px;
   width: 100%;
+  height: 100px;
 }
