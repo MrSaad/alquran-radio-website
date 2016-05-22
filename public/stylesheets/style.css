@@ -1,8 +1,296 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/**  Basic Page CSS **/
+html{
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-a {
-  color: #00B7FF;
+body{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 2.5em;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+h1{
+  font-size: 2em;
+}
+
+ul{
+  list-style-position: outside;
+}
+
+a, a:hover{
+  color: #E4AD54;
+}
+
+/*** navbar **/
+header .navbar {
+  padding: 30px 0;
+  transition: all .5s ease-out;
+  border-color: transparent;
+}
+
+header .navbar-default {
+  background-color: transparent;
+}
+
+header .navbar-brand{
+  padding-top: 12px;
+
+}
+
+header .navbar-brand img{
+  max-width: 200px;
+}
+
+header .navbar-default .navbar-nav a, .navbar-default .navbar-nav>li>a:focus{
+  color: rgba(100, 100, 100, 1);
+}
+
+header .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus{
+  color: rgba(212,175,55,1);
+}
+
+header .navbar-default .navbar-nav a:hover, .navbar-default .navbar-nav>li>a:hover{
+  color: rgba(212,175,55,1);
+}
+
+header .nav .active a { 
+  background: transparent !important; 
+} 
+
+header .navbar .navbar-collapse{
+  text-align: center;
+}
+
+@media only screen 
+and (min-width: 0px)
+and (max-width: 768px){
+  header .navbar{
+    background-color: white;
+  }
+  header .navbar .navbar-brand img{
+    max-width: 150px;
+  }
+}
+
+/** navbar in body **/
+header .navbar.inbody {
+  border: 1px solid transparent;
+  border-color: #DDD;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #FBFBFB !important;
+}
+
+header .navbar.inbody a:hover, .navbar.inbody .active a:hover{
+  color: rgba(212,175,55,1);
+}
+
+header .navbar.inbody .navbar-brand img{
+  max-width: 150px;
+}
+
+/**  Page **/
+
+.page h1 {
+  margin-bottom: 50px;
+}
+
+/** Main Page **/
+#main{
+  /*background: url('../pics/car.jpg') no-repeat center top;*/
+  /*background: url('../pics/car.jpg') no-repeat center top fixed;*/
+  /*background: url('../pics/background.jpg') no-repeat center top;*/
+  /*background-size: auto 100%;*/
+  background-size: 100% auto;
+  background-color: white;
+  position: relative;
+}
+
+#main #main-image{
+  padding-top: 15%;
+}
+
+#main-image img{
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+#main-player{
+   padding-top: 10%;
+}
+
+#main-player iframe{
+  max-width: 400px;
+  display: table;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px){
+  #main #main-image{
+    padding-top: 200px;
+  }
+  #main #main-player{
+    padding-top: 150px;
+  }
+  #main-image img{
+    max-width: 80%;
+  }
+}
+
+#prayer-table{
+  padding-top: 15px;
+  font-size: 0.9em;
+  color: #AAA;
+}
+
+.pname{
+  text-align: right;
+  font-weight: 400;
+}
+
+/** About Page **/
+#about{
+  background-color: #F9F9F9;
+}
+
+#about h1{
+  text-align: center;
+}
+
+#about .content.container-fluid{
+  padding: 0px 80px 30px 80px;
+}
+
+#about .row{
+  padding-top: 20px;
+}
+
+#about .col-md-4{
+  text-align: center;
+  padding: 70px 30px 0px 30px;
+}
+
+#info-icon{
+
+}
+
+#about p{
+  padding-top: 20px;
+  font-size: 0.7em;
+}
+
+#about h3{
+  font-weight: 600;
+  padding-top: 40px;
+  color: rgba(212,175,55,1);;
+}
+
+#about .alquran-icon{
+  color: #555;
+}
+
+/*** Contact ***/
+#contact .content.container-fluid{
+  padding: 0px 100px 100px 100px;
+}
+
+#contact .col-md-6{
+  padding-top: 70px;
+}
+
+#contact h2{
+  margin-bottom: 20px;
+}
+
+/*** ContactInfo ***/
+
+#contactInfo-contact{
+  font-size: 22px;
+}
+
+#contactInfo-contact .col-xs-12{
+  padding-top: 10px;
+}
+
+#contactInfo-contact span{
+  padding-left: 20px;
+}
+
+#contactInfo-contact img{
+  max-width: 50px;
+  filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  transition:  all .3s ease-out;
+}
+
+#contactInfo-contact img:hover{
+  filter: none;
+  -webkit-filter: none;
+}
+
+#contactInfo #social-media{
+  padding-top: 30px;
+}
+
+#contactInfo #social-media #twitter-icon{
+  margin-left: 50px;
+}
+
+#contactInfo #social-media #facebook-icon{
+  margin-left: 20px;
+}
+
+#fund-button{
+  color: #777;
+  background-color: white;
+  margin-left: 40px;
+  border: 2px solid #999;
+  transition: all ease-in-out .15s;
+}
+
+#fund-button:hover, #fund-button:focus{
+  color: white;
+  border: 2px solid rgba(230, 149, 0, 0.95);
+  background-color: rgba(230, 149, 0, 0.95);
+}
+
+/*** Feed ***/
+
+/*** Footer ***/
+#footer{
+  background-color: transparent;
+}
+
+#footer .content.container{
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/*** Empty Space ***/
+#empty-space{
+  height: 100px;
+}
+
+#footer p{
+  margin: 5px 0 10px 0;
+}
+
+/*** Radio ***/
+#radio{
+  border: 1px solid transparent;
+  border-color: #DDD; 
+  position: fixed;
+  bottom: -10px;
+  width: 100%;
 }
